@@ -1,0 +1,13 @@
+{
+    "name": "HeavyPost",
+    "alias": "heavypost",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\HeavyPost\\Providers\\HeavyPostServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

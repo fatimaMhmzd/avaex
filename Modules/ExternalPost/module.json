@@ -1,0 +1,13 @@
+{
+    "name": "ExternalPost",
+    "alias": "externalpost",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ExternalPost\\Providers\\ExternalPostServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

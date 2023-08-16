@@ -1,0 +1,13 @@
+{
+    "name": "InUrbanePost",
+    "alias": "inurbanepost",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\InUrbanePost\\Providers\\InUrbanePostServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

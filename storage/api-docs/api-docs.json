@@ -1,0 +1,726 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "پستاپ ",
+        "description": "توضیحات",
+        "version": "1"
+    },
+    "paths": {
+        "/api/blog/v1/getBlog": {
+            "get": {
+                "tags": [
+                    "blog"
+                ],
+                "summary": "لیست بلاگ",
+                "description": "توضیحات",
+                "operationId": "63820497a808a7fdb14c133a37e727cb",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/blog/v1/StoreBlog": {
+            "post": {
+                "tags": [
+                    "blog"
+                ],
+                "summary": "افزودن بلاگ",
+                "description": "توضیحات",
+                "operationId": "7d21691015d9a936b7bb4751efd64e50",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "shortDescription",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "longDescription",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "groupId",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "image",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "seoDescription",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "seoKeyboard",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/blog/v1/UpdateBlog/{id}": {
+            "get": {
+                "tags": [
+                    "blog"
+                ],
+                "summary": "ویرایش بلاگ",
+                "description": "توضیحات",
+                "operationId": "de3033e0d4e436c56a2d5a6ffee369f9",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/blog/v1/StoreUpdateBlog": {
+            "post": {
+                "tags": [
+                    "blog"
+                ],
+                "summary": "ویرایش بلاگ",
+                "description": "توضیحات",
+                "operationId": "89239d638512af1a1051b6f16e50bbdc",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "shortDescription",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "longDescription",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "groupId",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "image",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "seoDescription",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "seoKeyboard",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/blog/v1/removeBlog/{id}": {
+            "get": {
+                "tags": [
+                    "blog"
+                ],
+                "summary": "حذف بلاگ",
+                "description": "توضیحات",
+                "operationId": "33dd3af69374f801ad950ecf299f309f",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/blogGroup/v1/getBlogGroup": {
+            "get": {
+                "tags": [
+                    "blogGroup"
+                ],
+                "summary": "گروه بلاگ",
+                "description": "توضیحات",
+                "operationId": "470cdb82f9bd5eb0f78db3aeb1feec21",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/blogGroup/v1/StoreBlogGroup": {
+            "post": {
+                "tags": [
+                    "blogGroup"
+                ],
+                "summary": "افزودن گروه مقاله",
+                "description": "توضیحات",
+                "operationId": "ba2b7a5a033a3d8681284f994a628e21",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "image",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "file"
+                        }
+                    },
+                    {
+                        "name": "seoDescription",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "seoKeyboard",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/blog/v1/UpdateBlogGroup/{id}": {
+            "get": {
+                "tags": [
+                    "blogGroup"
+                ],
+                "summary": "ویرایش گروه بلاگ",
+                "description": "توضیحات",
+                "operationId": "a07bffef18a25d5cf2eb183891a80a51",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/blog/v1/StoreUpdateBlogGroup": {
+            "post": {
+                "tags": [
+                    "blogGroup"
+                ],
+                "summary": "ویرایش گروه بلاگ",
+                "description": "توضیحات",
+                "operationId": "a6fb3ad08987af0196b3e3e4b026f290",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "shortDescription",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "longDescription",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "groupId",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "image",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "seoDescription",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "seoKeyboard",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/blog/v1/removeBlogGroup/{id}": {
+            "get": {
+                "tags": [
+                    "blogGroup"
+                ],
+                "summary": "حذف گروه بلاگ",
+                "description": "توضیحات",
+                "operationId": "51cae63a4e2f2c573ca83e833920f6d0",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/discountCode/v1/getDiscountCode": {
+            "get": {
+                "tags": [
+                    "DiscountCode"
+                ],
+                "summary": "لیست تخفیف ها",
+                "description": "توضیحات",
+                "operationId": "29944141ead19dcffd58c5625778538e",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/discountCode/v1/StoreDiscountCode": {
+            "post": {
+                "tags": [
+                    "DiscountCode"
+                ],
+                "summary": "افزودن تخفیف",
+                "description": "توضیحات",
+                "operationId": "85e4ff5f8435a7175411b88d1ebb5285",
+                "parameters": [
+                    {
+                        "name": "code",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "price",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/discountCode/v1/UpdateDiscountCode/{id}": {
+            "get": {
+                "tags": [
+                    "DiscountCode"
+                ],
+                "summary": "ویرایش تخفیف",
+                "description": "توضیحات",
+                "operationId": "480983a20e0c17b7e04eb172cf199079",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/discountCode/v1/StoreUpdateDiscountCode": {
+            "post": {
+                "tags": [
+                    "DiscountCode"
+                ],
+                "summary": "ویرایش تخفیف",
+                "description": "توضیحات",
+                "operationId": "208fa45834e1b962451f028cdb8d224c",
+                "parameters": [
+                    {
+                        "name": "code",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "price",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/discountCode/v1/removeDiscountCode/{id}": {
+            "get": {
+                "tags": [
+                    "DiscountCode"
+                ],
+                "summary": "حذف تخفیف",
+                "description": "توضیحات",
+                "operationId": "10342f5ebd58fdda976917484b830e48",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/api/ExternalPost/v1/addExternalPost": {
+            "post": {
+                "tags": [
+                    "externalPostCreat"
+                ],
+                "summary": "درخواست پست خارجی",
+                "description": "توضیحات",
+                "operationId": "324db0941e52708cd2f2bc495515ef37",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/Heavypost/v1/addVehicles": {
+            "post": {
+                "tags": [
+                    "heavyCar"
+                ],
+                "summary": " اضافه کردن خودرو",
+                "description": "توضیحات",
+                "operationId": "e57eb484cc6b7d9281739e7e078caab5",
+                "parameters": [
+                    {
+                        "name": "vehicleName",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/Heavypost/v1/updateVehicles": {
+            "post": {
+                "tags": [
+                    "heavyCar"
+                ],
+                "summary": "آپدیت نوع خودرو",
+                "description": "توضیحات",
+                "operationId": "db65422fffe6e913b3f8328b9f19d5b0",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "vehicleName",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/api/Heavypost/v1/deleteVehicles/{id}": {
+            "get": {
+                "tags": [
+                    "heavyCar"
+                ],
+                "summary": "تست گت",
+                "description": "توضیحات",
+                "operationId": "b46edfc8731869bd500bcdd3ea443c78",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of Vehicles",
+                        "required": true,
+                        "example": "1"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "apiAuth": {
+                "type": "http",
+                "description": "Authentication Bearer Token",
+                "name": "Authentication Bearer Token",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            },
+            "sanctum": {
+                "type": "apiKey",
+                "description": "Enter token in format (Bearer <token>)",
+                "name": "Authorization",
+                "in": "header"
+            }
+        }
+    }
+}

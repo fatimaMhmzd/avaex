@@ -1,0 +1,13 @@
+{
+    "name": "PostupServices",
+    "alias": "postupservices",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PostupServices\\Providers\\PostupServicesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

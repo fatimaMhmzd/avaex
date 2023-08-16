@@ -1,0 +1,17 @@
+{
+    "Role": true,
+    "User": true,
+    "Compony": true,
+    "Pages": true,
+    "Slider": true,
+    "Setting": true,
+    "Address": true,
+    "Agent": true,
+    "Wallet": true,
+    "PostupServices": true,
+    "InternalPost": true,
+    "TotalPost": true,
+    "MyAccount": true,
+    "Discount": true,
+    "Test": true
+}

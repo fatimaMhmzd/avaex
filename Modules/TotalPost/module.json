@@ -1,0 +1,13 @@
+{
+    "name": "TotalPost",
+    "alias": "totalpost",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TotalPost\\Providers\\TotalPostServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

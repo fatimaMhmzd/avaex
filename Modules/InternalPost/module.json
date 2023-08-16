@@ -1,0 +1,13 @@
+{
+    "name": "InternalPost",
+    "alias": "internalpost",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\InternalPost\\Providers\\InternalPostServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

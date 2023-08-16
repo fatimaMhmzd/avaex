@@ -1,0 +1,13 @@
+{
+    "name": "Compony",
+    "alias": "compony",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Compony\\Providers\\ComponyServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
